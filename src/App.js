@@ -1,9 +1,11 @@
+import Header from "../src/component/Header"
+import Footer from "../src/component/Footer"
 
-
-function App() {
+function App () {
   return (
     <div className="App">
-      ROSELINES WORLD
+      <Header/>
+      <Footer/>
     </div>
   );
 }
