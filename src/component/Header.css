@@ -4,18 +4,45 @@
     justify-content: space-between;
     align-items: center;
     height: 10vh;
+    padding:0 100px;
 }
 
 .mobile-menu{
     display:  none;
 }
 
+.logo-div{
+    color: brown;
+    font: weight 900; 
+    border-left: 2px double brown;
+    border-bottom: 2px double brown;
+    padding: 5px;
+}
+
 .menu ul{
     list-style: none;
     display: flex;
-    gap: 15%;
+    gap: 20px;
 }
 
 .menu-item{
     text-decoration: none;
+    color: black;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    position:  relative;
+}
+
+.menu-item::after{
+    content:"" ;
+    width: 0;
+    height: 2px;
+    background-color: black;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    transition: width 0.5s;
+}
+
+.menu-item:hover::after{
+    width: 100%;
 }
